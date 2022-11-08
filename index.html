@@ -111,7 +111,7 @@
                 <p>
                 Internet Health Report data is licensed under a <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
                     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Permissions beyond 
-                the scope of this license may be available at ihr-admin@iij-ii.co.jp.
+                the scope of this license may be available at admin@ihr.live.
               </p>
             </div>
           </div>
@@ -135,15 +135,24 @@
               <i class="bx bx-receipt"></i>
               <h4>AS Hegemony</h4>
               <p>Daily dumps of AS Hegemony values (a.k.a. Network Dependency) are available here: 
-              <a href="https://ihr-archive.iijlab.net/ihr/hegemony/">https://ihr-archive.iijlab.net/ihr/hegemony/</a> </p>
+              <a href="https://ihr-archive.iijlab.net/ihr/hegemony/">https://ihr-archive.iijlab.net/ihr/hegemony/</a> and  <a href="https://data.bgpkit.com/ihr/">https://data.bgpkit.com/ihr/</a></p>
               <p>There is two types of files, nammed local and global. Local AS Hegemony represents the dependency of an individual network (Origin AS). 
               Global AS Hegemony represents the centrality of a network in Internet topology. 
               Please see <a href='https://ihr.iijlab.net/ihr/en-us/documentation#AS_dependency'>IHR documentation</a> for more details.</p>
             </div>
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+              <i class="bx bx-receipt"></i>
+              <h4>RPKI/IRR status</h4>
+              <p>Daily dumps of the RPKI and IRR status of all globally reachable prefixes are available here: 
+              <a href="https://ihr-archive.iijlab.net/ihr/rov/">https://ihr-archive.iijlab.net/ihr/rov/</a> </p>
+              <p>
+              In this dataset a route correspond to a (prefix, originasn_id) pair.
+              This is a dump of our SQL database. Each line is a row in the database and there is quite a lot of redundant data. Same rows with only different asn_id and hege value refer to the same route (prefix/origin AS pair) but we found multiple transit ASes that are commonly used to access this route. Each row shows the results for a distinct transit AS.
+            </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-cube-alt"></i>
               <h4>More on request</h4>
-              <p>Send us an email if you need other IHR metrics: ihr-admin@iij-ii.co.jp</p>
+              <p>Send us an email if you need other IHR metrics: admin@ihr.live</p>
             </div>
           </div>
           <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/stock-g3ef9148d0_640.jpg");' data-aos="fade-left" data-aos-delay="100"></div>
@@ -166,7 +175,7 @@
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">I need more data, where is the data for previous years?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
-                In order to save disk space we haven't dumped the entire IHR database here. We are dumping data on request-basis. Feel free to ask for past data at ihr-admin@iij-ii.co.jp.
+                In order to save disk space we haven't dumped the entire IHR database here. We are dumping data on request-basis. Feel free to ask for past data at admin@ihr.live.
               </p>
             </div>
           </li>
@@ -217,7 +226,7 @@
         <div class="row">
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-          <p>Feel to ask question and request more data at ihr-admin@iij-ii.co.jp</p>
+          <p>Feel to ask question and request more data at admin@ihr.live</p>
           <p>Send your bug report or feature request here: <a href='https://github.com/InternetHealthReport/ihr-archive-website/issues'>https://github.com/InternetHealthReport/ihr-archive-website/issues</a></p>
           </div>
 
