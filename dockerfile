@@ -1,10 +1,9 @@
-FROM nginx:latest
+FROM nginx:1.20-alpine
 
-RUN apt-get update && apt-get upgrade -y
-
+RUN apk update && \
+    apk upgrade
 
 COPY . /usr/share/nginx/html
-
 
 EXPOSE 80
 
